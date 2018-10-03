@@ -1,2 +1,2 @@
-# Project-1
+# SuperCrypto!
 UCD Project 1
