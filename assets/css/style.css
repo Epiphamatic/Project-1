@@ -1,0 +1,25 @@
+.coinCard {
+
+    width: 15vw;
+    height: auto;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    padding: 2vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+.coinName {
+
+    font-size: 5vh;
+}
+
+.coinValue {
+
+    font-size: 3vh;
+}
+
+.drop {
+
+    border-radius: 5px;
+}
