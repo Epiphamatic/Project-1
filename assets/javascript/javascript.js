@@ -35,4 +35,15 @@ function dropdown (object)
             }
         });
     });
+
+
 }
+$(function(){
+  
+    $(".dropdown-menu a").click(function(){
+      
+      $(".btn-secondary:first-child").text($(this).text());
+       $(".btn-secondary:first-child").val($(this).text());
+    });
+  
+  });
