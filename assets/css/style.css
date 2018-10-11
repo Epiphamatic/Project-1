@@ -1,21 +1,50 @@
 .header {
-    background-color: slategray;
+    background-color: #084D8D;
     /* display: grid; */
     grid-gap: 1em;
     text-align: center;
+    color: white;
+    border-radius: 15px 50px;
+    height: auto;
+}
+#background {
+    background-color: #e9ecef;
+    height:100%;
+    width:100%
 }
 
 .jumbtron {
-    background-color: transparent;
+    background-color: #222228;
 }
 footer {
     padding: 30px 0;
     clear: both;
     font-size: 12px;
-    color: #fff;
-    color: #ccc;
+    color: silver;
     text-align: center;
-    background: #666;
-    border-top: 8px solid #4aaaa5;
+    background: #084D8D;
+    border-top: 8px solid;
     height: 50px;
+    display: table-row;   
   }
+#dropdownExchange {
+      color: white;
+      background-color:#DBAB64;
+      border-style: none;
+      border-radius: 5px;
+}
+#dropdownCoin {
+    color: white;
+    background-color:#DBAB64;
+    border-style: none;
+    border-radius: 5px;
+}
+#Graph{
+    color: white;
+    background-color: #DBAB64;
+    border-style: none;
+    border-radius: 15px;
+}
+.card-body {
+    background: #e9ecef;
+}
