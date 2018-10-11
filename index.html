@@ -9,6 +9,9 @@
     <?xml version="1.0" encoding="utf-8"?>
    
     <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Special Font -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -35,14 +38,14 @@
 </head>
 
 <body>
-    <div class='jumbotron'>
 
         <div class="header">
             
-            <h1> Tracker </h1>
+            <div class="headerText"> Crypton </div>
         
         </div>
-    </div>
+
+        <img class="coinRight" src="assets/images/bitcoin.gif" alt="">
 
 <!-- Future integration of users
 
@@ -70,60 +73,24 @@
 
 </div> -->
 
-<div class="container">
-    
-    <div class="row">
-        
-        <div class="col-md-6">
+<div class="container">  
             
-            <div class="dropdownLeft">
-                
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Exchanges
-                </button>
+    <div class="dropdownLeft">
+        
+        <button class="btn btn-secondary dropdown-toggle exchanges" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Exchanges
+        </button>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownExchange'>
-                    <a class="dropdown-item binance" href="#">binance</a>
-                    <a class="dropdown-item bitfinex" href="#">bitfinex</a>
-                    <a class="dropdown-item gateio" href="#">gateio</a>
-                    <a class="dropdown-item hitbtc" href="#">hitbtc</a>
-                    <a class="dropdown-item kraken" href="#">kraken</a>
-                    <a class="dropdown-item poloniex" href="#">poloniex</a>
-                </div>
-
-            </div>
-
+        <div class="dropdown-menu exchanges" aria-labelledby="dropdownMenuButton" id='dropdownExchange'>
+            <a class="dropdown-item binance" href="#">binance</a>
+            <a class="dropdown-item bitfinex" href="#">bitfinex</a>
+            <a class="dropdown-item gateio" href="#">gateio</a>
+            <a class="dropdown-item hitbtc" href="#">hitbtc</a>
+            <a class="dropdown-item kraken" href="#">kraken</a>
+            <a class="dropdown-item poloniex" href="#">poloniex</a>
         </div>
-        
-        <div class="col-md-6">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                        Coins
-                    </button>
-        
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body base">
-        
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-        </div>
+    </div>
 
     <div class='row'>
 
@@ -131,24 +98,24 @@
 
             <div class='Graph'>
 
-                <div class="card">
+                <div class="card graphBox">
 
-                    <div class="card-body">
+                    <div class="card-body graphBox">
 
-                        <h5 class="card-title">Special title treatment</h5>
+                        <h5 class="card-title">Timeframe</h5>
 
                             <div class="Timeframe">
 
-                        <ul>
-                        <button type="button" class="btn btn-outline-dark">1d</button>
-                        <button type="button" class="btn btn-outline-dark">5d</button>
-                        <button type="button" class="btn btn-outline-dark">1m</button>
-                        <button type="button" class="btn btn-outline-dark">6m</button>
-                        <button type="button" class="btn btn-outline-dark">YTD</button>
-                        <button type="button" class="btn btn-outline-dark">1YR</button>
-                        <button type="button" class="btn btn-outline-dark">5YR</button>
-                        <button type="button" class="btn btn-outline-dark">Max</button>
-                        </ul>
+                        <div>
+                        <button type="button" class="btn btn-outline-dark btn-margin">1d</button>
+                        <button type="button" class="btn btn-outline-dark btn-margin">5d</button>
+                        <button type="button" class="btn btn-outline-dark btn-margin">1m</button>
+                        <button type="button" class="btn btn-outline-dark btn-margin">6m</button>
+                        <button type="button" class="btn btn-outline-dark btn-margin">YTD</button>
+                        <button type="button" class="btn btn-outline-dark btn-margin">1YR</button>
+                        <button type="button" class="btn btn-outline-dark btn-margin">5YR</button>
+                        <button type="button" class="btn btn-outline-dark btn-margin">Max</button>
+                        </div>
                     
                         </div>
 
@@ -159,15 +126,40 @@
 
         <div class="col-lg-2">
 
+            <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" id="modalButton">
+                Coins
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body base">
+    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Added classes to the card for styling -->
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 ">
 
-            <div class="card newsCardMain">
+            <div class="card newsCardMain" >
 
-                <div class="card-body">
+                <div class="card-body newsCardDiv">
 
                     <div class="card-title cryptoTitle">Crypto News</div>
                     <div class="card-text" id='newsCard'></div>
