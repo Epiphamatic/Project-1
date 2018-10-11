@@ -48,7 +48,9 @@ function dropdown (object)
     
                     var a = $("<a class = 'dropdown-item drop' >");
                     a.text(response[i].base);
-                    console.log(a.text());
+                    a.attr("data-name", response[i].base)
+                    a.attr("data-val", Math.round(response[i].price_quote * 100) / 100)
+                    console.log(a)
                     $(".base").append(a);
 
                 }
@@ -56,6 +58,7 @@ function dropdown (object)
             }
         }
         $(".drop").on('click', function(){
+            $(".ccc-widget").remove();
             text = $(this).text();
             console.log(text);
             $("#script").empty(); // this does nothing!
@@ -76,6 +79,7 @@ function dropdown (object)
         })
 
         $(".1w").on('click', function(){
+            $(".ccc-widget").remove();
             period = "&period=1W" ;
             baseUrl = "https://widgets.cryptocompare.com/";
             var scripts = document.getElementsByTagName("script");
@@ -93,6 +97,7 @@ function dropdown (object)
         });
 
         $(".2w").on('click', function(){
+            $(".ccc-widget").remove();
             console.log("2W works");
             period = "&period=2W" ;
             baseUrl = "https://widgets.cryptocompare.com/";
@@ -111,6 +116,7 @@ function dropdown (object)
         });
 
         $(".1m").on('click', function(){
+            $(".ccc-widget").remove();
             console.log("1M works");
             period = "&period=1M" ;
             baseUrl = "https://widgets.cryptocompare.com/";
@@ -129,6 +135,7 @@ function dropdown (object)
         });
 
         $(".3m").on('click', function(){
+            $(".ccc-widget").remove();
             console.log("3M works");
             period = "&period=3M" ;
             baseUrl = "https://widgets.cryptocompare.com/";
@@ -147,6 +154,7 @@ function dropdown (object)
         });
 
         $(".6m").on('click', function(){
+            $(".ccc-widget").remove();
             console.log("6M works");
             period = "&period=6M" ;
             baseUrl = "https://widgets.cryptocompare.com/";
@@ -165,6 +173,7 @@ function dropdown (object)
         });
 
         $(".1YR").on('click', function(){
+            $(".ccc-widget").remove();
             console.log("1YR works");
             period = "&period=1Y" ;
             baseUrl = "https://widgets.cryptocompare.com/";
@@ -184,6 +193,27 @@ function dropdown (object)
         });
     });
 };
+
+$(function (){
+  
+    $(".dropdown-menu a").click(function(){
+      
+    $(".btn-secondary:first-child").text($(this).text());
+    // $(".btn-secondary:first-child").val($(this).text());
+
+    });
+  
+});
+
+//   $(function (){
+
+//     $("#coinBtn").on('click',function(){
+    
+//       $(".btn-primary:first-child").text($(this).text());
+//     //   $("#coinBtn:first-child").val($(this).text());
+//     });
+
+//   });
 
 function coinClick() {
 
@@ -338,72 +368,5 @@ $('#statsCard').html(result);
 }
 })
 
-
-
-// var newsUrl = 'https://newsapi.org/v2/top-headlines?' +'sources=bbc-news&' +'apiKey=83fb1989288a476683d74b5321ffd2a2';  
-    
-// $.getJSON(newsUrl).then(function(result){
-
-//     //  Debugging 
-
-//     console.log(result.articles);
-
-//     // For loop for each item in the array 
-
-//     for(i = 0; i < result.articles.length; i++) {
-
-//         // Create initial body to hold all the article items
-        
-//         var articles = $("<div class = 'article'>")
-
-//         // Call each of them individually and create divs to hold the data
-
-//         var title = $("<div class = 'title'>" + result.articles[i].title + "</div>");
-//         console.log(title);
-//         var content = $("<div class = 'description'>" + result.articles[i].description + "</div>");
-//         var urlToImage = $("<img class = 'articleImg' src = " + result.articles[i].urlToImage + ">");
-//         var url = $("<a class = 'source' href = " + result.articles[i].url + "> Source </a>");
-
-//         // Append them all to the article body 
-
-//         articles.append(title, urlToImage, content, url);
-
-//         // Append each of the newly created article cards to the newsCard div
-
-//         $('#newsCard').append(articles);
-
-//     };
-
-//     //  var result="";
-//     //  $.each(result,function(index,value)
-//     //  {
-//     //     result += '<li>'+value['articles']+'</li>';
-//     //     // result += '<p>'+value.description+'</p>';
-//     // });
-    
-//     // $('#newsCard').html(result); 
-// });
-
-// $('.dropdown-menu a').click(function() {
-//     var input = $(".btn-secondary:first-child").text();
-// $.ajax({
-//     dataType:'JSON',
-//     url : 'https://api.nomics.com/v1/exchange-markets/prices?key=2dc3cbe885c38fd8b528ac761e8ad9f1&quote=USD'+input,
-//     method: 'GET',
-//     success: success});
-
-// function success(e)
-// {
-// var result="";
-// $.each(e,function(index,value)
-// {
-//     result += '<li>Ticker:  '+value.quote+'</li>';
-//     result += '<ul>Price: '+value.price_quote+'</ul>'
-//     result += '<ul>Time: '+moment(value.timestamp).format('mm/dd/yyy hh:mm') +'</ul>'
-// });
-
-// $('#statsCard').html(result);
-// }
-// })
 
 });

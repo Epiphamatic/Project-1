@@ -25,6 +25,9 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"crossorigin="anonymous"></script>
 
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     <!-- popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -100,29 +103,31 @@
 
                 <div class="card graphBox">
 
-                    <div class="card-body graphBox">
+                    <div class="card-body graphBox2">
 
                         <h5 class="card-title">Timeframe</h5>
+
+                        <div class="Timeframe">
+
+                                <div>
+                                <button type="button" class="btn btn-outline-dark 1d btn-margin">1d</button>
+                                <button type="button" class="btn btn-outline-dark 1w btn-margin">1w</button>
+                                <button type="button" class="btn btn-outline-dark 2w btn-margin">2w</button>
+                                <button type="button" class="btn btn-outline-dark 1m btn-margin">1m</button>
+                                <button type="button" class="btn btn-outline-dark 3m btn-margin">3m</button>
+                                <button type="button" class="btn btn-outline-dark 6m btn-margin">6m</button>
+                                <button type="button" class="btn btn-outline-dark 1YR btn-margin">1y</button>
+                                </div>
+                            
+                            </div>
 
                         <div class="widget">
                             <script id="script" type="text/javascript">
                                 
-                                </script>
+                            </script>
                         </div>
 
-                            <div class="Timeframe">
-
-                            <ul>
-                            <button type="button" class="btn btn-outline-dark 1d">1d</button>
-                            <button type="button" class="btn btn-outline-dark 1w">1w</button>
-                            <button type="button" class="btn btn-outline-dark 2w">2w</button>
-                            <button type="button" class="btn btn-outline-dark 1m">1m</button>
-                            <button type="button" class="btn btn-outline-dark 3m">3m</button>
-                            <button type="button" class="btn btn-outline-dark 6m">6m</button>
-                            <button type="button" class="btn btn-outline-dark 1YR">1YR</button>
-                            </ul>
-                        
-                            </div>
+                            
 
                     </div>
 
@@ -151,7 +156,7 @@
     
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>

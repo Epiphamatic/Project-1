@@ -67,17 +67,6 @@ body {
     border-color: rgba(252, 228, 14, 0.849);
 }
 
-
-/* #background {
-    background-color: #e9ecef;
-    height:100%;
-    width:100%
-} */
-
-/* .jumbtron {
-    background-color: #222228;
-} */
-
 footer {
     clear: both;
     font-size: 12px;
@@ -225,4 +214,16 @@ footer {
 .graphBox {
 
     background-color: rgba(255, 255, 255, 0.425);
+}
+
+.graphBox2 {
+
+    background-color: rgba(255, 255, 255, 0.425);
+  
+}
+
+.widget {
+
+    height: 53vh;
+    margin-top: 2vh;
 }
