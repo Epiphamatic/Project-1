@@ -1,123 +1,177 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?xml version="1.0" encoding="utf-8"?>
+   
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/php.php"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    
-
-
-    <script src="bootstrap.bundle.min.js/bootstrap.bundle.js "></script>
-<!-- javascript -->
+    <!-- <script src="bootstrap.bundle.min.js/bootstrap.bundle.js "></script> -->
+    <!-- javascript -->
     <script type="text/javascript" src="assets/javascript/javascript.js"></script>
-<!-- Jquery -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<!-- popper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
 
     <title>Cryto-Currency Tracker</title>
 
 </head>
+
 <body>
+    <div class='jumbotron'>
 
-<div class="container">
-    <h1> Crypton Crypto Currency!</h1>  
-
-    <div class="row">
-
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-6">
-
-            <div class="dropdownLeft">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                  Currencies
-
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item binance" href="#">binance</a>
-                  <a class="dropdown-item bitfinex" href="#">bitfinex</a>
-                  <a class="dropdown-item gateio" href="#">gateio</a>
-                  <a class="dropdown-item hitbtc" href="#">hitbtc</a>
-                  <a class="dropdown-item kraken" href="#">kraken</a>
-                  <a class="dropdown-item poloniex" href="#">poloniex</a>
-                </div>
-
-                </div>
-            </div>
-
-
-        <div class="col-md-6">
-
-            <!-- <div class="dropdownRight">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown button
-                </button>
-                <div class="dropdown-menu base" aria-labelledby="dropdownMenuButton">
-                 </div>
-                 </div>
-        </div> -->
-
-                <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-            Modal
-        </button>
+        <div class="header">
+            
+            <h1> Tracker </h1>
         
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+        </div>
+    </div>
+    
+    <div class="row">
+        
+        <div class="col-md-6">
+            
+            <div class="dropdownLeft">
+                
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Exchanges
                 </button>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownExchange'>
+                    <a class="dropdown-item binance" href="#">binance</a>
+                    <a class="dropdown-item bitfinex" href="#">bitfinex</a>
+                    <a class="dropdown-item gateio" href="#">gateio</a>
+                    <a class="dropdown-item hitbtc" href="#">hitbtc</a>
+                    <a class="dropdown-item kraken" href="#">kraken</a>
+                    <a class="dropdown-item poloniex" href="#">poloniex</a>
                 </div>
-                <div class="modal-body base">
-                
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+
             </div>
-            </div>
+
         </div>
-                    
+        
+        <div class="col-md-6">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                        Coins
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body base">
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class = 'Graph'> 
-
-            </div>
-                
-                <div class="Timeframe">
-
-                    <ul>
-                            <button type="button" class="btn btn-outline-dark">1d</button>
-                            <button type="button" class="btn btn-outline-dark">5d</button>
-                            <button type="button" class="btn btn-outline-dark">1m</button>
-                            <button type="button" class="btn btn-outline-dark">6m</button>
-                            <button type="button" class="btn btn-outline-dark">YTD</button>
-                            <button type="button" class="btn btn-outline-dark">1YR</button>
-                            <button type="button" class="btn btn-outline-dark">5YR</button>
-                            <button type="button" class="btn btn-outline-dark">Max</button>
-                    </ul>
-
-
-
-            </div>
-
-        </div>            
         </div>
 
-</div>
+    <div class='row'>
+
+        <div class="col-lg-6">
+
+            <div class='Graph'>
+
+                    <div class="card">
+
+                            <div class="card-body">
+
+                              <h5 class="card-title">Special title treatment</h5>
+
+                                 <div class="Timeframe">
+
+                                <ul>
+                                <button type="button" class="btn btn-outline-dark">1d</button>
+                                <button type="button" class="btn btn-outline-dark">5d</button>
+                                <button type="button" class="btn btn-outline-dark">1m</button>
+                                <button type="button" class="btn btn-outline-dark">6m</button>
+                                <button type="button" class="btn btn-outline-dark">YTD</button>
+                                <button type="button" class="btn btn-outline-dark">1YR</button>
+                                <button type="button" class="btn btn-outline-dark">5YR</button>
+                                <button type="button" class="btn btn-outline-dark">Max</button>
+                                </ul>
+                            
+                                </div>
+
+                            </div>
+
+                </div> 
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">Quotes</h5>
+                     <p class="card-text" id = 'statsCard'>With supporting text below as a natural lead-in to additional content.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+                </div>
+
+             </div>
+
+        </div>
+
+        <!-- Added classes to the card for styling -->
+
+        <div class="col-lg-3">
+
+            <div class="card newsCardMain">
+
+                        <div class="card-body">
+
+                          <div class="card-title cryptoTitle">Crypto News</div>
+                          <div class="card-text" id='newsCard'></div>
+                          
+
+                        </div>
+            </div>
+
+         </div>
+
+        </div>
+                  
+
+    <footer>
+
+            <div class="container">
+              Copyright &copy; 
+            </div>
+
+    </footer> 
+
 
 </body>
+
 </html>
