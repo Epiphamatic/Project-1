@@ -26,12 +26,12 @@
 
 </head>
 
-<body id="background">
+<body>
     <div class='jumbotron'>
 
         <div class="header">
             
-            <h1> Crypton </h1>
+            <h1> Tracker </h1>
         
         </div>
     </div>
@@ -42,11 +42,11 @@
             
             <div class="dropdownLeft">
                 
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownExchange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Exchanges
                 </button>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownExchangeList" id='dropdownExchangeList'>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownExchange'>
                     <a class="dropdown-item binance" href="#">binance</a>
                     <a class="dropdown-item bitfinex" href="#">bitfinex</a>
                     <a class="dropdown-item gateio" href="#">gateio</a>
@@ -61,7 +61,7 @@
         
         <div class="col-md-6">
                     <!-- Button trigger modal -->
-                    <button type="button" id="dropdownCoin" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                         Coins
                     </button>
         
@@ -99,17 +99,19 @@
 
                             <div class="card-body">
 
+                              <h5 class="card-title">Special title treatment</h5>
+
                                  <div class="Timeframe">
 
                                 <ul>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">1d</button>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">5d</button>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">1m</button>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">6m</button>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">YTD</button>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">1YR</button>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">5YR</button>
-                                <button type="button" class="btn btn-outline-dark" id="Graph">Max</button>
+                                <button type="button" class="btn btn-outline-dark">1d</button>
+                                <button type="button" class="btn btn-outline-dark">5d</button>
+                                <button type="button" class="btn btn-outline-dark">1m</button>
+                                <button type="button" class="btn btn-outline-dark">6m</button>
+                                <button type="button" class="btn btn-outline-dark">YTD</button>
+                                <button type="button" class="btn btn-outline-dark">1YR</button>
+                                <button type="button" class="btn btn-outline-dark">5YR</button>
+                                <button type="button" class="btn btn-outline-dark">Max</button>
                                 </ul>
                             
                                 </div>
@@ -124,28 +126,31 @@
 
         <div class="col-lg-3">
 
-            <div class="card newsCardMain">
+            <div class="card">
 
                 <div class="card-body">
 
-                  <div class="card-title cryptoTitle">Crypto News</div>
-                  <div class="card-text" id='newsCard'></div>
+                    <h5 class="card-title">Quotes</h5>
+                     <p class="card-text" id = 'statsCard'>With supporting text below as a natural lead-in to additional content.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 
                 </div>
-                
-            </div>
+
+             </div>
 
         </div>
 
+        <!-- Added classes to the card for styling -->
+
         <div class="col-lg-3">
 
-            <div class="card">
+            <div class="card newsCardMain">
 
                         <div class="card-body">
 
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                          <div class="card-title cryptoTitle">Crypto News</div>
+                          <div class="card-text" id='newsCard'></div>
+                          
 
                         </div>
             </div>
