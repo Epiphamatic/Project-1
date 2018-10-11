@@ -368,5 +368,4 @@ $('#statsCard').html(result);
 }
 })
 
-
 });
