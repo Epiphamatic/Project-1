@@ -48,3 +48,60 @@ footer {
 .card-body {
     background: #e9ecef;
 }
+
+.cryptoTitle {
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2vh; 
+}
+
+.articleImg {
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 2vh;
+    border-radius: 5px; 
+}
+
+.article {
+
+    margin-bottom: 2vh;
+    background: rgb(0, 0, 0);
+    width: 20vw;
+    border-radius: 5px;
+    color: white;
+    padding: 1vw;
+    text-align: center;
+
+}
+
+.newsCardMain {
+
+    height: 60vh;
+    overflow: auto;
+}
+
+.title {
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.description {
+
+    font-size: 15px;
+    margin-bottom: 1vh;
+    text-align: left;
+}
+
+.source {
+
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
