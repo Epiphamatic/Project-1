@@ -1,4 +1,7 @@
-var queryUrl = "https://api.nomics.com/v1/exchange-markets/prices?key=2dc3cbe885c38fd8b528ac761e8ad9f1&quote=USD"
+var queryUrl = "https://api.nomics.com/v1/exchange-markets/prices?key=2dc3cbe885c38fd8b528ac761e8ad9f1&quote=USD";
+// var newsUrl = 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR';
+// var newsUrl = "https://cors.io/?https://cryptopanic.com/api/posts/?auth_token=57b7c8bf35d5e74e30e83d460c3b51cc6b6f4093&currencies=BTC,ETH";
+var newsUrl = 'https://newsapi.org/v2/top-headlines?' +'sources=bbc-news&' +'apiKey=83fb1989288a476683d74b5321ffd2a2';
 
 dropdown("binance");
 dropdown("bitfinex");
@@ -20,7 +23,7 @@ function dropdown (object)
         for(i = 0; i < response.length; i++)
         if (response[i].quote === 'USDT' || response[i].quote === 'USD'){
     
-            console.log(response[i]);
+            // console.log(response[i]);
     
             
                 if(response[i].exchange === object)
@@ -38,7 +41,9 @@ function dropdown (object)
 
 
 }
-$(function(){
+
+
+$(function (){
   
     $(".dropdown-menu a").click(function(){
       
@@ -48,6 +53,10 @@ $(function(){
   
   });
 
+
+
+// Fixed API Call for News API. Styling in indexZach.html
+  
 $(document).ready(function() {
 
     var newsUrl = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=83fb1989288a476683d74b5321ffd2a2';   
