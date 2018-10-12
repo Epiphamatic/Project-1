@@ -15,7 +15,7 @@ var config = {
 
     var database = firebase.database();
 
-var queryUrl = "https://api.nomics.com/v1/exchange-markets/prices?key=2dc3cbe885c38fd8b528ac761e8ad9f1&quote=USD"
+var queryUrl = "https://api.nomics.com/v1/exchange-markets/prices?key=2dc3cbe885c38fd8b528ac761e8ad9f1&quote=USDformat=csv"
 
 dropdown("binance");
 dropdown("bitfinex");
