@@ -14,4 +14,8 @@ Programs used:
 - Firebase
 - Nomics API
 - News API
+- JSON
 - CryptoCompare Widget
+- Moment JS Library
+- Popper JS Library
+- Google Fonts
